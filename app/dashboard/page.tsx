@@ -1,6 +1,7 @@
 import Link from "next/link";
 import AuthGuard from "@/components/AuthGuard";
 import LogoutButton from "@/components/LogoutButton";
+import ManagerTests from "@/components/ManagerTests";
 import ManagerChecks from "@/components/ManagerChecks";
 import ManagerTrips from "@/components/ManagerTrips";
 
@@ -12,6 +13,7 @@ export default function DashboardPage() {
         <p className="text-gray-400">
           The live map and alerts will live here.
         </p>
+        <ManagerTests />
         <ManagerChecks />
         <ManagerTrips />
         <Link href="/" className="text-blue-500 underline">
